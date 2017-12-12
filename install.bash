@@ -47,6 +47,7 @@ sudo apt-get install -y haproxy
 echo "-> Copying config file..."
 sudo cp $PWD/haproxy.cfg /etc/haproxy/haproxy.cfg
 echo "-> Starting HAProxy..."
-
+sudo systemctl start haproxy
 echo "-> HAProxy started."
+sudo systemctl --no-pager --lines=0 status haproxy
 echo "-> Installation Complete."
