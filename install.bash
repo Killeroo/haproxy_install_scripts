@@ -43,7 +43,7 @@ echo "-> Installing base packages..."
 sudo apt-get update -y
 sudo apt-get install -y nano git software-properties-common
 echo "-> Installing HAProxy..."
-sudo apt-get install haproxy
+sudo apt-get install -y haproxy
 echo "-> Copying config file..."
 sudo cp 
 echo "-> Starting HAProxy..."
