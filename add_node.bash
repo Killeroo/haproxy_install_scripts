@@ -1,6 +1,8 @@
 #!/bin/bash
 # Adds a node address to the HAProxy config
 
+# Root check
+
 # Check for 2 arguments (1 optional)
 # Arguments check
 if [ $# -lt 2 ]; then
@@ -9,9 +11,9 @@ if [ $# -lt 2 ]; then
 fi
 
 if [ -z "$3" ]; then
-    $weight=1
+    weight=1
 else
-    $weight=$3
+    weight=$3
 fi
 
 echo "     server node$2 $1:3306 check weight $3" >> /etc/haproxy/haproxy.cfg && "> Node$2 $1 (with weight $3) added to /etc/haproxy/haproxy.cfg"
