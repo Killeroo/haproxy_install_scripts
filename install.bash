@@ -45,7 +45,7 @@ sudo apt-get install -y nano git software-properties-common
 echo "-> Installing HAProxy..."
 sudo apt-get install -y haproxy
 echo "-> Copying config file..."
-sudo cp 
+sudo cp $PWD/haproxy.cfg /etc/haproxy/haproxy.cfg
 echo "-> Starting HAProxy..."
 
 echo "-> HAProxy started."
