@@ -1,0 +1,5 @@
+# External database address
+db_address=
+
+# HAProxy destination selection policy
+ha_policy=source
