@@ -38,7 +38,6 @@ elif [ $config_status -eq 2 ]; then
 fi
 echo "-> Config file good"
 source $PWD/setup.cnf
-
 echo "-> Installing base packages..."
 sudo apt-get update -y
 sudo apt-get install -y nano git software-properties-common
